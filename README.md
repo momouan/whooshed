@@ -1,4 +1,4 @@
-# whooshed
+# Whooshed
  An improved search engine developed using the Whoosh library for Python3 and the semantic features from SpaCy.
  <br>
  The application uses a very small dataset created just for tests.
