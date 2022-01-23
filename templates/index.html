@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Gurdiengine</title>
+  </head>
+  <body>
+
+
+
+<div class="text-center">
+<img src="{{url_for('static', filename='logo.png')}}" class="container" style="width: 1000px; margin-top: 300px;">
+</div>
+
+
+
+    
+<br>
+
+
+
+<div class="container">
+
+<form class="col" method="GET" action='/search'>
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Keyword" name="q">
+    <br>
+    <select class="form-select" aria-label="Default select example" name="type">
+      <option selected value="All">All</option>
+      <option value="PERSON">Person</option>
+      <option value="NORP">Nationales or religious or political groups</option>
+      <option value="FACILITY">Buldings, airports, highways, bridges, etc</option>
+      <option value="ORG">Companies, agencies, intitutions, etc</option>
+      <option value="GPE">Countries, cities, states</option>
+      <option value="LOC">Non GPE locations, moutain ranges, bodies of water</option>
+      <option value="PRODUCT">Objects, vehicles, foods, etc</option>
+      <option value="EVENT">EVENT Wars, sports events, etc </option>
+      <option value="WORK_OF_ART">Work of art, titles of books, songs, etc</option>
+      <option value="LAW">Law</option>
+      <option value="LANGUAGE">Language</option>
+      <option value="DATE">Date</option>
+      <option value="TIME">Time</option>
+      <option value="PERCENT">Percent</option>
+      <option value="MONEY">Money</option>
+      <option value="QUANTITY">Quantity</option>
+      <option value="ORDIANL">Ordinal, "first", "second", etc</option>
+      <option value="CARDINAL">Cardinal</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary" style="background-color:#076aaf; border-color: #076aaf;">Search</button>
+</form>
+   
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+  </body>
+</html>

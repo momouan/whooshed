@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Gurdiengine</title>
+  </head>
+  <body>
+
+  
+    
+<br>
+
+
+<div class="container">
+
+
+<div class="col">
+
+{% for i in res %}
+   <div class="col-sm-12">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ i }} </h5>
+        <a href="{{ i }}" class="btn btn-primary">View</a>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  {% endfor %}
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+  </body>
+</html>
